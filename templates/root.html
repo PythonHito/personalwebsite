@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {% block head %}
+        <link rel="stylesheet" href="static/style.css" />
+
+        <title>{% block title %}{% endblock %} - Brett Warren's Site</title>
+    {% endblock %}
+    </head>
+    <body>
+        {% block nav %}
+            <nav>
+                <a href="/">Brief</a>
+                <a href="/projects">Projects</a>
+            </nav>
+        {% endblock %}
+        {% block main %}{% endblock %}
+        {% block footer %}
+            <footer>
+                Website hosted by Google Cloud Platform.
+            </footer>
+        {% endblock %}
+    </body>
+</html>
